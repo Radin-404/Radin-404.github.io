@@ -1,0 +1,427 @@
+@font-face {
+  font-family: vazir;
+  src: url(./../font/Vazir.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  direction: rtl;
+  font-family: vazir;
+}
+html {
+    scroll-behavior: smooth;
+}
+.side-navbar {
+  position: fixed;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item a {
+  width: 50px;
+  height: 50px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b3b3b3;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  
+  color: #333;
+  text-decoration: none;
+
+  overflow: hidden;
+
+  transition: all 0.3s ease;
+}
+
+
+.nav-item i {
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: left 0.3s ease; 
+    left: 50%;                 
+    
+}
+
+.nav-item span {
+    position: absolute;
+
+    right: 55px;
+
+    opacity: 0;
+
+    white-space: nowrap;
+
+    transition: all 0.3s ease;
+}
+
+.nav-item a:hover {
+  display: flex;
+  justify-content: flex-start;
+  width: 140px;
+  border-radius: 25px;
+  color: #333;
+}
+.nav-item a:hover i {
+      position: fixed;
+}
+
+.nav-item a:hover span {
+    opacity: 1;
+}
+.hamburger {
+  display: none;
+}
+.box1{
+  width: 100vw;
+  height: 100vh;
+  background-color: #242424;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.box1 .text-box1{
+  color: #999999;
+}
+.box1 .box1-img{
+  width: 52.5rem;
+}
+.box1 .text-box1 h1:hover{
+  font-size: 3.5rem;
+  transition: .5s ease;
+  color: pink;
+}
+.box1 .text-box1 p:hover{
+  font-size: 1.5rem;
+  transition: .5s ease;
+  color: #ff9100;
+}
+.box1 .text-box1 .icon #youtube:hover{
+  font-size: 2rem;
+  transition: .5s ease;
+  color: #ff1100;
+  cursor: pointer;
+}
+.box1 .text-box1 .icon #instagram:hover{
+  font-size: 2rem;
+  transition: .5s ease;
+  color: #ea00ff;
+  cursor: pointer;
+}
+.box1 .text-box1 .icon #github:hover{
+  font-size: 2rem;
+  transition: .5s ease;
+  color: #a7a3a5;
+  cursor: pointer;
+}
+.box1 .text-box1 .icon #html:hover{
+  font-size: 2rem;
+  transition: .5s ease;
+  color: #ff6600;
+}
+.box1 .text-box1 .icon #css:hover{
+  font-size: 2rem;
+  transition: .5s ease;
+  color: #7700ff;
+  cursor: pointer;
+}
+.box1 .text-box1 .icon #game:hover{
+  font-size: 2rem;
+  transition: .5s ease;
+  color: #d8d4d4;
+  cursor: pointer;
+}
+.box2{
+  width: 100vw;
+  height: 100vh;
+  background-color: #999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.frame{
+  width: 70vw;
+  height: 70vh;
+  color: #242424;
+}
+.tozihat{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left{
+  width: 70%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.right{
+  width: 30%;
+}
+.right img{
+  width: 30vw;
+  height: 55vh;
+}
+.about-info {
+    width: 45%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px 40px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.info-item i {
+    color: #2196f3;
+    font-size: 14px;
+}
+
+.info-item strong {
+    color: #333;
+}
+
+.info-item span {
+    color: #555;
+}
+.box-box2{
+  display: flex;
+}
+.left .first{
+  margin: 10px;
+}
+.left .coulmn{
+  padding: 20px 5px;
+}
+.left #last{
+  margin: 20px 5px;
+}
+.box3{
+  width: 100vw;
+  height: 100vh;
+  background-color: #242424;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.frame-box3{
+  width: 70vw;
+  height: 100vh;
+  color: #b1adad;
+}
+.frame-box3 .more{
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.frame-box3 .more h1{
+  color: #615f5f;
+}
+.box-box3{
+  width: 50vw;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box-box-box3-all{
+  display: flex;
+  flex-direction: column;
+}
+.box-box-box3-all .icon{
+  font-size: 2rem;
+}
+.text-box3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill-box3 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 40px;
+    margin-top: 30px;
+}
+
+.skill {
+    width: 100%;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.skill-info span {
+    font-size: 14px;
+    color: #b1adad;
+}
+
+.skill-info strong {
+    font-size: 14px;
+    color: #b1adad;
+}
+
+.progress {
+    width: 100%;
+    height: 10px;
+    background-color: #eeeeee;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #0868b8;
+}
+/* =========================
+   Resume
+========================= */
+
+.box4 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #999999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frame-box4 {
+    width: 70vw;
+    height: 100vh;
+}
+
+.tozahat-box4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.resumee {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.resume {
+    display: flex;
+    gap: 30px;
+}
+
+.resume-right,
+.resume-left {
+    width: 50%;
+}
+
+
+/* عنوان بخش‌ها */
+
+.resume-section h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.resume-item h3 {
+    color: #0868b8;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+
+/* متن‌ها */
+
+.resume-item p {
+    color: #333;
+    line-height: 1.6;
+    margin: 6px 0;
+    font-size: 13px;
+}
+
+
+/* آیتم‌های رزومه */
+
+.resume-item {
+    position: relative;
+    border-right: 2px solid #0868b8;
+    padding-right: 18px;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+}
+
+
+/* دایره */
+
+.resume-item::before {
+    content: "";
+    position: absolute;
+    right: -7px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #0868b8;
+    border-radius: 50%;
+    background-color: #999999;
+}
+
+
+/* تاریخ */
+
+.date {
+    display: inline-block;
+    background-color: #eeeeee;
+    padding: 3px 8px;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+/* لیست‌ها */
+
+.resume-item ul {
+    padding-right: 18px;
+    margin-top: 8px;
+}
+
+.resume-item li {
+    list-style: disc;
+    margin-bottom: 6px;
+    line-height: 1.6;
+    color: #333;
+    font-size: 13px;
+}
